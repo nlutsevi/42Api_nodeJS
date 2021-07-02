@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/css/home.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">42 Profile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>    
+            </div>
+        </nav>
+        <div class="profile-picture">
+            <img src="<%= me.image_url %>">
+        </div>
+        <div class="info-header"><h2>Personal info</h2></div>
+        <div class="info-table">
+                <table class="table table-primary table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Surname</th>
+                            <th scope="col">email</th>
+                            <th scope="col">Current location</th>
+                            <th scope="col">Pool month</th>
+                            <th scope="col">Pool year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><%= me.id %></td>
+                            <td><%= me.first_name %></td>
+                            <td><%= me.last_name %></td>
+                            <td><%= me.email %></td>
+                            <td><%= me.location %></td>
+                            <td><%= me.pool_month %></td>
+                            <td><%= me.pool_year %></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div class="projects-header"><h2>Projects</h2></div>
+        <div class="projects-table">
+            <table style="margin:20px; text-align: center;" class="table table-primary table-striped">
+                <thead class="table-head">
+                    <tr>
+                        <th scope="col">Project name</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Final mark</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (var i = 0; i < me.projects_users.length; i++) { %>
+                        <tr>
+                            <td> <%= me.projects_users[i].project.name %> </td>
+                            <td> <%= me.projects_users[i].status %> </td> 
+                            <td> <%= me.projects_users[i].final_mark %> </td> 
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

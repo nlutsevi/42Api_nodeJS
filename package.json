@@ -1,0 +1,21 @@
+{
+  "name": "42app",
+  "version": "1.0.0",
+  "description": "42 api for data",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "docker:start": "nodemon --legacy-watch server.js"
+  },
+  "author": "NatashaLutsevich",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "client-oauth2": "^4.3.3",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "nodemon": "^2.0.7"
+  }
+}

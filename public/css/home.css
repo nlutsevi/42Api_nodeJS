@@ -1,0 +1,43 @@
+.profile-picture {
+    margin: 30px;
+}
+
+.profile-picture img {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.info-header {
+    text-align: center;
+    font-family: emoji;
+    color: #34495e;
+}
+
+.info-table {
+    text-align: center;
+    background-color: transparent;
+}
+
+.projects-header {
+    text-align: center;
+    font-family: emoji;
+    color: #34495e;
+}
+
+.projects-table {
+    padding: 10px;
+}
+
+.table-primary {
+    margin: 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}

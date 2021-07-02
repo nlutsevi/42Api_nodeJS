@@ -1,0 +1,69 @@
+body.login-layout {
+    background-color: #f2f2f2;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    padding-top: 60px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header img {
+    width: 150px;
+    height: 150x;
+    vertical-align: middle;
+}
+
+#container {
+    background-color: #fafafa;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: none;
+    margin: 2em auto;
+    max-width: 600px;
+    outline: 0;
+    padding: 1em;
+    position: relative;
+    width: 80%;
+    padding: 100px;
+}
+
+header.page-header {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+h2.welcome-header
+{
+    font-size: 5em;
+    text-align: center;
+    margin: 5px;
+    color: #34495e;
+    background-color: transparent;
+}
+
+.author {
+    font-style: italic;
+    margin:20px;
+    font-size: 10pt;
+}
+
+.author img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn {
+    background-color: #34495e;
+    border-color: #34495e;
+    color: white;
+}
+
+a {
+    color: #fafafa;
+}
